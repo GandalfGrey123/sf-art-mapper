@@ -30,3 +30,11 @@ First Header | Second Header
 - clicking on google map pins will display info on event
 - users will have their own lists of saved events, 
 - users can save events
+
+
+<img src="https://github.com/yhatt/marp/raw/master/images/marp.png" align=right width=90>
+Markdown presentation writer, powered by Electron.
+Markdown presentation writer, powered by Electron.
+Markdown presentation writer, powered by Electron.
+Markdown presentation writer, powered by Electron.
+Markdown presentation writer, powered by Electron. 
