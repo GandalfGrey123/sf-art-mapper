@@ -20,7 +20,7 @@ Web interface mapping local San Francisco art events. Using Google Maps API this
 
 
 
-<img src="https://github.com/GandalfGrey123/sf-art-mapper/blob/master/read-me-docs/ui-mockup.png" align=left width=80%>
+<img src="https://github.com/GandalfGrey123/sf-art-mapper/blob/master/read-me-docs/ui-mockup.png" align=right width=80%>
 
 <div>
 
