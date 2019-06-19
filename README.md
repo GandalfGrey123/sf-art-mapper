@@ -16,9 +16,14 @@ Web interface mapping local San Francisco art events. Using Google Maps API this
 
 
 ##### The main page map
-![mockup](https://github.com/GandalfGrey123/sf-art-mapper/blob/master/read-me-docs/ui-mockup.png)
 
-- the users will search related keywords
+
+
+
+
+First Header | Second Header
+------------ | -------------
+![mockup](https://github.com/GandalfGrey123/sf-art-mapper/blob/master/read-me-docs/ui-mockup.png) | - the users will search related keywords
 - map will display all events in the default area
 - users can maodifying distance of interest
 - provides filter for event art types 
