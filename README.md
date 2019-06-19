@@ -18,10 +18,6 @@ Web interface mapping local San Francisco art events. Using Google Maps API this
 ##### The main page map
 
 
-
-
-<img src="https://github.com/GandalfGrey123/sf-art-mapper/blob/master/read-me-docs/ui-mockup.png" align=left width=80%>
-
 <div>
 
 <ul style="float:right;">
@@ -35,4 +31,8 @@ Web interface mapping local San Francisco art events. Using Google Maps API this
 
 </div>
 
+
+
+
+<img src="https://github.com/GandalfGrey123/sf-art-mapper/blob/master/read-me-docs/ui-mockup.png" align=left width=100%>
 
