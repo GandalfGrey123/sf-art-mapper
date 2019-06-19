@@ -22,9 +22,9 @@ Web interface mapping local San Francisco art events. Using Google Maps API this
 
 <img src="https://github.com/GandalfGrey123/sf-art-mapper/blob/master/read-me-docs/ui-mockup.png" align=left width=80%>
 
-<div alight=right>
+<div>
 
-<ul>
+<ul style="float:right;">
 <li>keywords search</li>
 <li>display local events</li>
 <li>distance target</li>
