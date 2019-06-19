@@ -1,0 +1,33 @@
+install workflow
+dev tools/environment setup , 
+
+
+1. create main directories /client /server
+2. create front and back end nodejs apps
+3. add dependencies
+
+/client
+npx create-react-app .
+delete unwanted files generated from create-react-app
+add depenencies to package.json
+{
+	"axios": "^0.18.0",
+    "google-map-react": "^1.1.4",
+    "google-maps-react": "^2.0.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^2.1.8"
+}
+
+
+/server
+npm init
+add depenencies to package.json
+{
+    "bcrypt": "^3.0.6",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0",
+    "sequelize": "^5.1.0"
+}
