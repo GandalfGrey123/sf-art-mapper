@@ -25,13 +25,12 @@ Web interface mapping local San Francisco art events. Using Google Maps API this
 <div>
 
 <ul>
-<li>the users will search related keywords</li>
-<li>map will display all events in the default area</li>
-<li>users can maodifying distance of interest</li>
-<li>provides filter for event art types </li>
-<li>clicking on google map pins will display info on event</li>
-<li>users will have their own lists of saved events, </li>
-<li>users can save events</li>
+<li>keywords search</li>
+<li>display local events</li>
+<li>distance target</li>
+<li>filter art types </li>
+<li>view event info</li>
+<li>save events </li>
 </ul>  
 
 </div>
