@@ -25,8 +25,8 @@ Web interface mapping local San Francisco art events. Using Google Maps API this
 <div>
 
 <ul style="float:right;">
-<li>keywords search</li>
-<li>display local events</li>
+<li style="float:right;">keywords search</li>
+<li style="float:right;">display local events</li>
 <li>distance target</li>
 <li>filter art types </li>
 <li>view event info</li>
