@@ -16,26 +16,10 @@ Web interface mapping local San Francisco art events. Using Google Maps API this
 
 
 ##### The main page map
-
-
-
+ 
+keywords search  ,  displays local events , keywords search , distance interest radius ,  filter art types  , view event info , save events
 
 
 <img src="https://github.com/GandalfGrey123/sf-art-mapper/blob/master/read-me-docs/ui-mockup.png" width=90%>
 
-> keywords search
-> display local events
 
-
-<div>
-
-<ul>
-<li>keywords search</li>
-<li>display local events</li>
-<li>distance target</li>
-<li>filter art types </li>
-<li>view event info</li>
-<li>save events </li>
-</ul>  
-
-</div>
