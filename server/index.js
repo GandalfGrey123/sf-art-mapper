@@ -18,6 +18,6 @@ app.use('/',router.get('/', (req,res) =>{
 }));
 
 
-app.listen(443, '127.0.0.1', () => {
+app.listen(80, '127.0.0.1', () => {
   console.log('express server started')
 });
