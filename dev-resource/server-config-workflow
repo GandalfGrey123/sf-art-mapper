@@ -1,45 +1,87 @@
-
-amazon linux2 distribution
-
-SERVER CONFIG - HTTPS 
-
-open inbound rules in security wizard
-https 443 anywhere
-https 80 anywhere
-
-update then install httpd and dependencies
-sudo yum update -y
-sudo yum install -y httpd
-
-change apache permissions
-sudo usermod -a -G apache ec2-user
-exit
-ssh .. back into server
-
-give apache permissions to public www folder
-sudo chown -R ec2-user:apache /var/www
-sudo chmod 2775 /var/www && find /var/www -type d -exec sudo chmod 2775 {} \;
-find /var/www -type f -exec sudo chmod 0664 {} \;
+Amazon Provided Ubuntu 18.04 Image
 
 
-sudo yum update -y
-sudo yum install -y mod_ssl <-- generates the config file and locahost.crt
+initial login:
 
-cd /etc/pki/tls/certs
-sudo ./make-dummy-cert localhost.crt
+Installation / Updating:
 
-sudo cp localhost.crt /etc/pki/tls/private/localhost.key <--- before running the server we need to add the pvt key 
-sudo systemctl start httpd 
+*initial update
+sudo apt-get update && sudo apt-get upgrade -y
 
+*setup ssh key for git repo
+cd ~/.ssh
+ssh-keygen
 
-
-SERVER CONFIG - DEV ENVIRONMENT
-
-
-install nodejs
-curl -sL https://rpm.nodesource.com/setup_10.x | sudo -E bash -
-sudo yum install -y nodejs
+*installed nodejs
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
 
 
-install git
-sudo yum install git
+*installed nginx
+sudo apt-get install nginx -y
+
+
+Operating System
+   - Canonical, Ubuntu, 18.04 LTS, amd64 bionic image build on 2019-02-12
+   - Free Tier 29 GB
+   - security ports SSH, HTTP and HTTPS
+   - Elastic IP setup
+   - using Route53 DNS hosted zone and Google Domains
+   - setup SSH Key for GitHub
+
+Software
+nodejs - v10.16.0
+git - version 2.17.1
+ 
+
+
+Setup HTTPS workflow
+------------------------
+
+INSTALL NGINX
+$ sudo apt-get install nginx -y
+$ sudo systemctl start nginx
+
+EDIT NGINX CONFIG
+$ sudo rm /etc/nginx/sites-available/default
+$ sudo nano /etc/nginx/sites-available/default
+  
+
+ ADDED THIS TO CONFIG
+ server {
+    listen 443;
+    server_name the_domain_name.com www.the_domain_name.com;
+    location / {
+        proxy_pass http://127.0.0.1:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_redirect off;
+     }
+ }
+
+
+GET THE CERTBOT PROGRAM
+$ sudo add-apt-repository ppa:certbot/certbot
+$ sudo apt-get update
+$ sudo apt-get install python-certbot-nginx
+
+CHECK CONFIG SYNTAX (recomended by digital ocean tut)
+$ sudo nginx -t
+$ sudo systemctl reload nginx
+
+sudo ufw status
+sudo ufw enable
+sudo ufw allow 'Nginx Full'
+
+sudo certbot --nginx -d artsfevents.com -d www.artsfevents.com
+output:
+ - Congratulations! Your certificate and chain have been saved at:
+   /etc/letsencrypt/live/artsfevents.com/fullchain.pem
+   Your key file has been saved at:
+   /etc/letsencrypt/live/artsfevents.com/privkey.pem
+
+
+
