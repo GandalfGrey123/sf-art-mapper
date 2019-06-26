@@ -1,0 +1,28 @@
+
+body{ 
+ background-color: #DADADA;
+ background-image: url("https://upload.wikimedia.org/wikipedia/commons/6/6a/San_Francisco_skyline_from_Coit_Tower.jpg");
+ background-size:120% ;
+}
+
+.layer {
+ background-color: rgba(34,34,34,0.5);
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 110%;
+}
+
+.carousel {
+  margin-top: 20px;
+  width:55%;
+  margin: auto;  
+  padding:60px;
+}
+
+img {
+  opacity: 0.9;
+  filter: alpha(opacity=90); /* For IE8 and earlier */
+  padding-bottom: 20px;
+}

@@ -5,42 +5,42 @@ import {
 
 function App() {
   return (
-    <div>
+    <div className="layer">
 
-        <Carousel>
+        <Carousel className="carasouel-body">
          <Carousel.Item>
            <img
              className="d-block w-100"
-             src="holder.js/800x400?text=First slide&bg=373940"
+             src="https://raw.githubusercontent.com/GandalfGrey123/sf-art-mapper/site-unavailable/unavailable-img/roadblock-512.png"
              alt="First slide"
            />
            <Carousel.Caption>
-             <h3>First slide label</h3>
-             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+             <h3> Site Under Construction !</h3>
+               <p>Sorry this website is temporarily unavailable</p>               
            </Carousel.Caption>
          </Carousel.Item>
          <Carousel.Item>
            <img
              className="d-block w-100"
-             src="holder.js/800x400?text=Second slide&bg=282c34"
-             alt="Third slide"
+             src="https://cdn2.iconfinder.com/data/icons/round-varieties/60/Rounded_-_High_Ultra_Colour02_-_Maps-512.png"
+             alt="Google Maps API"
            />
        
            <Carousel.Caption>
-             <h3>Second slide label</h3>
-             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+             <h3>Website Features</h3>
+             <p> This site uses the Google Maps API to display a over view of all local events</p>
            </Carousel.Caption>
          </Carousel.Item>
          <Carousel.Item>
            <img
              className="d-block w-100"
-             src="holder.js/800x400?text=Third slide&bg=20232a"
+             src="https://cdn4.iconfinder.com/data/icons/web-development-5/500/api-code-window-512.png"
              alt="Third slide"
            />
        
            <Carousel.Caption>
-             <h3>Third slide label</h3>
-             <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+             <h3>Website Features</h3>
+             <p>This site provides access to large open data sets from the EventBrite API</p>
            </Carousel.Caption>
          </Carousel.Item>
        </Carousel>
