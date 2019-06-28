@@ -1,11 +1,41 @@
 
-SERVER CONFIG - DEV ENVIRONMENT
+SERVER HTTPS CONFIG 
+- installing ngnix webserver and UFW firewall
+$ sudo apt-get update && sudo apt-get upgrade -y
+$ sudo apt-get install nginx -y
+$ sudo systemctl start nginx
+$ sudo systemctl enable nginx
+
+edit the /etc/nginx/sites-available/default
+server {
+    listen 80;
+    server_name artsfevents.com www.artsfevents.com;
+    location / {
+        proxy_pass http://127.0.0.1:8080;
+        proxy_http_version 1.1;
+        proxy_set_header Upgrade $http_upgrade;
+        proxy_set_header Connection 'upgrade';
+        proxy_set_header Host $host;
+        proxy_cache_bypass $http_upgrade;
+        proxy_redirect off;
+     }
+}
+$ sudo nginx -t
+$ sudo systemctl reload nginx
+$ sudo add-apt-repository ppa:certbot/certbot
+$ sudo apt-get update
+$ sudo apt-get install python-certbot-nginx
+$ sudo systemctl reload nginx
+$ sudo certbot --nginx -d artsfevents.com -d www.artsfevents.com
+$ sudo openssl dhparam -out /etc/ssl/certs/dhparam.pem 2048
+
+edit the /etc/nginx/sites-available/default
+ssl_dhparam /etc/ssl/certs/dhparam.pem;
+
+ --> done!
 
 
-install nodejs
-curl -sL https://rpm.nodesource.com/setup_10.x | sudo -E bash -
-sudo yum install -y nodejs
+SERVER DEV ENVIRONMENT CONFIG
+$ curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+$ sudo apt-get install -y nodejs
 
-
-install git
-sudo yum install git
