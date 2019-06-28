@@ -5,15 +5,17 @@ import {
  Form, Button
 } from 'react-bootstrap'
 
+import MapContainer from '../google-maps/MapContainer';
+
 class MapPage extends Component {
 
   render(){
    return(
    	<div>
-   	<Container className="mt-5">
+   	<Container fluid className="ml-2 mt-5">
   		<Row>  		  
   		  <Col
-  		   xs={2} md={2} lg={3}
+  		   xs={12} md={12} lg={3}
   		   className="map-form-container p-3 h-100 drop-shadow mr-3"
   		  >
   		   <Form className="p-1">
@@ -22,13 +24,13 @@ class MapPage extends Component {
   		  	 </Form.Row>
 
   		  	 <Form.Row className = "mt-4"> 
-    			<Form.Group as={Col} controlId="formGridEmail">
+    			<Form.Group as={Col} sm="12" md="6" controlId="formGridEmail">
     			  <Form.Label>Email</Form.Label>
     			  <Form.Control type="email" placeholder="ZipCode" />
     			</Form.Group>
 			
     			
-    			<Form.Group as={Col} controlId="exampleForm.ControlSelect1">
+    			<Form.Group as={Col} sm="12" md="6" controlId="exampleForm.ControlSelect1">
     			  <Form.Label>distance miles</Form.Label>
     			  <Form.Control as="select">
     			    <option>1 miles</option>
@@ -89,18 +91,15 @@ class MapPage extends Component {
   		  	 </Form.Row>
   		   </Form>
   		  </Col>
-
-
-  		  
+  		
   		  <Col 
-  		   xs={9} md={9} lg={8}
-  		   className="h-100 drop-shadow mt-2"
+  		   xs={12} md={12} lg={8}  		  
   		  >
-  		  sdfsdf
+  		  	<MapContainer/>
   		  </Col>
 
   		</Row>
-	</Container>
+	  </Container>
    	</div>
    );
   }

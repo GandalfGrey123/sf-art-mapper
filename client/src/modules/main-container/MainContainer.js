@@ -16,7 +16,7 @@ class MainContainer extends Component {
   constructor(props){
     super(props);
     this.state = {
-      selectedOption: 'map-link',
+      selectedOption: 'browse-link',
     };
   }
 
@@ -55,26 +55,27 @@ class MainContainer extends Component {
    return(
    	<div>     
         <Nav 
+          fill
           className="justify-content-center text-center mx-auto" 
           expand="sm"          
           aria-controls="switchContainerNav" 
         > 
         
           <Navbar 
-            className="justify-content-center nav-bar" 
+            className="justify-content-center nav-bar main-nav" 
             expand="sm" 
             onSelect={selectedKey => this.selectOption(selectedKey)}
            >          
           <Navbar.Toggle aria-controls="switchContainerNav" />
           <Navbar.Collapse id="switchContainerNav" className="mt-3">        
             
-            <Nav.Link eventKey="home-link" disabled={ selectedOption === "home-link" }> Home </Nav.Link>
+            <Nav.Link className="ml-3 mr-3" eventKey="home-link" disabled={ selectedOption === "home-link" }> Home </Nav.Link>
             
-            <Nav.Link eventKey="map-link" disabled={ selectedOption === "map-link" }> Events Map</Nav.Link>
+            <Nav.Link className="ml-3 mr-3" eventKey="map-link" disabled={ selectedOption === "map-link" }> Events Map</Nav.Link>
             
-            <Nav.Link eventKey="browse-link" disabled={ selectedOption === "browse-link" }> Browse Events</Nav.Link>
+            <Nav.Link className="ml-3 mr-3" eventKey="browse-link" disabled={ selectedOption === "browse-link" }> Browse Events</Nav.Link>
             
-            <Nav.Link eventKey="list-link" disabled={ selectedOption === "list-link" }> Events List</Nav.Link>
+            <Nav.Link className="ml-3 mr-3" eventKey="list-link" disabled={ selectedOption === "list-link" }> Events List</Nav.Link>
 
           </Navbar.Collapse>
           </Navbar>

@@ -11,10 +11,10 @@ class AppBar extends Component {
    return(
     <Navbar 
       bg="light" 
-      className="app-bar justify-content-between"
+      className="app-nav-bar justify-content-between"
     >
   	  <Navbar.Brand
-        className ="ml-4"
+        className ="app-nav-brand ml-4"
       > 
        ArtSfEvents.com
       </Navbar.Brand>
