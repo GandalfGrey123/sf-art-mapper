@@ -1,7 +1,4 @@
-.nav-bar{
- padding:20px;
-}
-
-.avatar{
- height: 60px;
+.main-nav > li{
+  padding-left:50px;
+  padding-right:50px;
 }
