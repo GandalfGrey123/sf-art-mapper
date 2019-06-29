@@ -1,0 +1,33 @@
+.w-70{
+ width:80%;
+ margin: 0 auto;
+}
+
+
+.has-search{
+ position: absolute;
+ z-index: 2;
+ display: block;
+ width: 2.375rem;
+ height: 2.375rem;
+ line-height: 2.375rem;
+ text-align: center;
+ pointer-events: none;
+ color: #aaa;
+}
+
+.bg-white{
+ background-color:white;
+}
+
+.oval-div{
+ border-top-right-radius:25px !important;
+ border-bottom-right-radius:25px !important;
+ border-top-left-radius:25px !important;
+ border-bottom-left-radius:25px !important;
+ text-align:center !important;
+ padding:10px !important;
+ padding-right: 25px !important;
+ padding-left: 25px !important;
+
+}

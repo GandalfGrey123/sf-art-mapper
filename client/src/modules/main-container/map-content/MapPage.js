@@ -11,7 +11,6 @@ class MapPage extends Component {
 
   render(){
    return(
-   	<div>
    	<Container fluid className="ml-2 mt-5">
   		<Row>  		  
   		  <Col
@@ -95,12 +94,11 @@ class MapPage extends Component {
   		  <Col 
   		   xs={12} md={12} lg={8}  		  
   		  >
-  		  	<MapContainer/>
+  		   <MapContainer/>
   		  </Col>
 
   		</Row>
 	  </Container>
-   	</div>
    );
   }
 }

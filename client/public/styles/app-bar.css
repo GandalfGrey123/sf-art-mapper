@@ -1,10 +1,11 @@
 .app-nav-bar{
  padding:5px;
+ background-color: rgb(66, 66, 66) !important;
 }
 
 .app-nav-brand{
  font-size:15px;
- color: darkgrey !important;
+ color: white !important;
 }
 
 .avatar{

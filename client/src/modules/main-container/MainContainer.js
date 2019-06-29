@@ -16,7 +16,7 @@ class MainContainer extends Component {
   constructor(props){
     super(props);
     this.state = {
-      selectedOption: 'browse-link',
+      selectedOption: 'list-link',
     };
   }
 

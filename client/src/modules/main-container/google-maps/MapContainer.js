@@ -5,7 +5,7 @@ import {
 } from 'react-bootstrap'
 
 import {
-  Map, Marker, GoogleApiWrapper
+  Map, GoogleApiWrapper
 } from 'google-maps-react';
 
 import {maps_api_key} from '../../../util/maps_config'
