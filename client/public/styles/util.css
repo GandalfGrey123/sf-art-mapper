@@ -3,6 +3,10 @@
  margin: 0 auto;
 }
 
+.transparent{
+ background-color:rgba(0, 0, 0, 0.0) !important;
+ border:none !important;
+}
 
 .has-search{
  position: absolute;
