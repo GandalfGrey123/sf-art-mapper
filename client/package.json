@@ -5,14 +5,15 @@
   "author": "marcus wong",
   "license": "ISC",
   "dependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1",
-    "react-router-dom": "^4.3.1",
     "axios": "^0.18.0",
     "google-map-react": "^1.1.4",
     "google-maps-react": "^2.0.2",
-    "react-bootstrap": "^1.0.0-beta.9"
+    "react": "^16.8.6",
+    "react-bootstrap": "^1.0.0-beta.9",
+    "react-dom": "^16.8.6",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "3.0.1",
+    "lodash": ">=4.17.14"
   },
   "scripts": {
     "start": "react-scripts start",
