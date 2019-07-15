@@ -11,6 +11,16 @@
  margin-left:-30px;
 }
 
+.search-button{
+ z-index: 100;
+ margin-top: 180px;
+ margin-left: 80px;
+}
+
+.map-form-container{
+ background-color:white;
+}
+
 .map-form-container < input{
  margin-top: 10px;
 }
