@@ -3,7 +3,7 @@ import {places_api_key} from "../util/places_config"
 
 const buildSearchQuery = (searchParams) =>{
   let buildSearch = searchParams.replace(/ /g,"+");
-  if (buildSearch.charAt(buildSearch.length-1) == '+') buildSearch = buildSearch.slice(0,-1) ;
+  if (buildSearch.charAt(buildSearch.length-1) ==='+') buildSearch = buildSearch.slice(0,-1) ;
  return buildSearch;
 }
 
