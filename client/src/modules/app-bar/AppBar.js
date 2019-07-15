@@ -1,23 +1,31 @@
 import React , { Component } from 'react';
 import {
-  Navbar,
+  Navbar, Nav
 } from 'react-bootstrap';
 
-import Avatar from '../avatar/Avatar'
+import Avatar from './avatar/Avatar'
 
 class AppBar extends Component {
 
   render(){
    return(
     <Navbar 
-      bg="light" 
-      className="app-nav-bar justify-content-between"
+      bg="dark" 
+      variant="dark"
+      className="app-nav-bar p-2 justify-content-between"
     >
   	  <Navbar.Brand
-        className ="app-nav-brand ml-4"
+        className ="ml-4 text-bold"
+        href="/home"
       > 
-       ArtSfEvents.com
+       ArtSfEvents
       </Navbar.Brand>
+       <Nav className="mr-auto">
+        
+         <Nav.Link href="/">Features</Nav.Link>
+         <Nav.Link href="/dash">Browse Events</Nav.Link>
+        
+       </Nav>
       <Avatar />
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     </Navbar>
