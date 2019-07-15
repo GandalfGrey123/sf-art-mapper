@@ -1,0 +1,29 @@
+.browse-button{
+ border-top-right-radius:25px;
+ border-bottom-right-radius:25px;
+ border-top-left-radius:25px;
+ border-bottom-left-radius:25px;
+ text-align:center;
+ padding:10px;
+ padding-right: 25px;
+ padding-left: 25px;
+ margin:0 auto;
+ display: flex;
+ margin-top: 150%;
+}
+
+.browse-card{
+ min-height: 70vh;
+ height: 100%
+}
+
+
+.hr-left{
+ background-color: grey;
+ height: 100%;
+}
+
+.padding-0{
+ padding-right:0;
+ padding-left:0;
+}
